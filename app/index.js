@@ -1,4 +1,20 @@
 
+// header scroll: 
+const headerSection = document.getElementById('header-section');
+console.log(headerSection);
+
+      window.addEventListener('scroll', function(){
+         if (this.scrollY >= 100){
+            headerSection.classList.add('scrolled')
+         } else{
+            headerSection.classList.remove('scrolled')
+         }
+         
+      });
+
+
+
+
 // history button 
 const historyBtn  = document.getElementById('history-button')
 historyBtn.addEventListener('click', function(){
@@ -31,6 +47,7 @@ donationBtn.addEventListener('click', function(){
 });
 
 
-// go to Blog page: 
+
+
 
    

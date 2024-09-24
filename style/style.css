@@ -9,3 +9,10 @@ body{
     background-color: red;
     padding: 10px;
 }
+
+#header-section.scrolled{
+    /* position: fixed; */
+    background-color: #ddd;
+    transition: all 0.4s ease-in-out;
+}
+

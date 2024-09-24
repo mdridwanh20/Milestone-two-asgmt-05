@@ -10,6 +10,13 @@ document.getElementById('feni-donate-button')
         const mainBalance = parseFloat(document.getElementById('main-balance').innerText);
         
 
+        // logic-error
+        if (feniInput > mainBalance){
+         document.getElementById('feni-logic-error').classList.remove('hidden');
+         return;
+      }
+
+
 // input valid verification condition:
    if(!isNaN(feniInput) && feniInput > 0){
       
@@ -28,7 +35,8 @@ document.getElementById('feni-donate-button')
           document.getElementById("my_modal_1").showModal();
 
    } else{
-      alert('put valid info');
+      // alert('put valid info');
+      document.getElementById("my_modal_2").showModal();
    };
    
       // donation history here:

@@ -10,7 +10,15 @@ document.getElementById('quota-button')
 
         //  main balance id value
         const mainBalance = parseFloat(document.getElementById('main-balance').innerText);
-        
+
+        // logic-error
+        if ( quotaInput > mainBalance){
+            document.getElementById('quota-logic-error').classList.remove('hidden');
+            return;
+        }
+
+
+
 
 // verify valid by condition;
 if (!isNaN(quotaInput) && quotaInput > 0){
@@ -31,7 +39,8 @@ if (!isNaN(quotaInput) && quotaInput > 0){
        document.getElementById("my_modal_1").showModal();
 
 } else{
-   alert('put valid info');
+    //   alert('put valid info');
+        document.getElementById("my_modal_2").showModal();
 };
       // donation history here:
       const historyItem = document.createElement('div')

@@ -8,6 +8,13 @@ document.getElementById('noakhali-donate-button')
         //  main balance id value
         const mainBalance = parseFloat(document.getElementById('main-balance').innerText);
 
+        // logic-error
+        if (noakhaliInput > mainBalance){
+            document.getElementById('noakhali-logic-error').classList.remove('hidden');
+            return;
+        }
+
+
    //  check the input valid
 if (!isNaN(noakhaliInput) && noakhaliInput > 0){
    const addedDonate = parseFloat(document.getElementById('noakhali-donate-added-btn')
@@ -29,7 +36,8 @@ if (!isNaN(noakhaliInput) && noakhaliInput > 0){
 
 
    } else{
-      alert('put valid info')
+    //   alert('put valid info')
+    document.getElementById("my_modal_2").showModal();
    };
 
 
