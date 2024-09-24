@@ -49,21 +49,31 @@
     </div>
 
 
-        <!-- donation button-->
-    <div class="bg-base-200 py-5 space-x-2 text-center">
-        <button class="px-6 btn btn-primary">Primary</button>
-        <button class="px-6 btn border-1 border-gray-300">History</button>
-    </div>
+            <!-- donation button-->
+        <div class="bg-base-200 py-5 space-x-2 text-center">
+
+            <button 
+            id="donation-button"
+            class="px-6 btn border-1 border-gray-300 btn-primary">Donation</button>
+
+            <button 
+            id="history-button"
+            class="px-6 btn border-1 border-gray-300">History</button>
+        </div>
 
  </header>
   
 
 <!-- Donation CARD ------------------------->
 
-<main class="bg-gray-100 pb-20">
+<main 
+    id="donation-section"
+    class="bg-gray-100 pb-20">
      <!-- Flood at Noakhali -->
-     <div
-     class="hero bg-base-200 ">
+     <div>
+
+        <div
+        class="hero bg-base-200 ">
          <div class="hero-content  grid lg:grid-cols-2 content-center">
          <img
              src="./asset/image/noakhali.png"
@@ -79,10 +89,12 @@
                      class="p-3">0 BD</button>
                  </div>
              </div>
-
+                    
              <h1 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
 
-             <p class="py-5">
+             <p 
+             id="flood-nowalhli-cnt"
+             class="py-5">
                  The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
              </p>
          <!-- DONATE INPUT -->
@@ -94,8 +106,11 @@
              id="noakhali-donate-button"
              class="btn w-full btn-primary">Donate Now</button>
          </div>
+
          </div>
-    </div>
+        </div>
+
+     </div>
 
     <!-- Flood Relief in Feni -->
     <div class="hero bg-base-200 ">
@@ -157,10 +172,12 @@
                 <p class="py-5">
                     The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                 </p>
+
             <!-- input button -->
                 <input 
                 id="quota-input"
                 class="w-full mb-3 p-3 rounded-md bg-transparent border-2 border-gray-200 focus:outline-none" placeholder="Write Donation Amount" type="text">
+
             <!-- donate button -->
                 <button 
                 id="quota-button"
@@ -171,10 +188,35 @@
 
 </main>
 
+
+ <!-- history section here--------------------- -->
+ <footer id="history-section" class="container m-auto hidden">
+
+        <h1 class="text-center font-bold text-2xl mt-8">Donation History</h1>
+        <hr class="my-4">
+
+            <!-- history section noakahli here -->
+        <div    
+            id="noakahli-history-container"
+            class=" mb-4">
+        </div>
+
+        <!-- history section feni here -->
+        <div 
+            id="feni-history-container"
+            class=" mb-4">
+        </div>
+
+        <!-- history Quota container -->
+        <div 
+            id="Quota-history-container"
+            class=" mb-4">
+        </div>
+
+</footer>
+
+
     
-
-
-
 
 <!-- javaScript LINK Here -->
     <script src="./index.js"></script>

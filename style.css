@@ -4,7 +4,8 @@
 body{
     font-family: "Lexend", sans-serif;
 }
-/* 
-#navbar-sticky.sticky{
-    background-color: rebeccapurple;
-} */
+
+.cardPrice{
+    background-color: red;
+    padding: 10px;
+}
