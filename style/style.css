@@ -12,7 +12,12 @@ body{
 
 #header-section.scrolled{
     /* position: fixed; */
-    background-color: #ddd;
     transition: all 0.4s ease-in-out;
+    background: rgba(214, 210, 210, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(8.1px);
+    border: 1px solid rgba(214, 210, 210, 0.17);
 }
 
