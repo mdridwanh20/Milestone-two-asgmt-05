@@ -13,8 +13,6 @@ console.log(headerSection);
       });
 
 
-
-
 // history button 
 const historyBtn  = document.getElementById('history-button')
 historyBtn.addEventListener('click', function(){
@@ -45,6 +43,51 @@ donationBtn.addEventListener('click', function(){
          "btn-primary"
       )
 });
+
+
+
+
+// // live validation check:
+//    document.getElementById('noakhali-input').addEventListener('input', function(){
+      
+//       const inputValue = parseFloat(document.getElementById("noakhali-input").value);
+      
+//       if(isNaN(inputValue) || inputValue <= 0){
+//          document.getElementById('noakhali-input-error').classList.remove('hidden');
+//          return;
+//       }
+      
+//    })
+
+// // live validation check:
+//    document.getElementById('feni-input').addEventListener('input', function(){
+      
+//       const inputValue = parseFloat(document.getElementById("noakhali-input").value);
+      
+//       if(isNaN(inputValue) || inputValue <= 0){
+//          document.getElementById('feni-input-error').classList.remove('hidden');
+//          return;
+//       }
+      
+//    })
+
+   
+// // live validation check:
+//    document.getElementById('quota-input').addEventListener('input', function(){
+      
+//       const inputValue = parseFloat(document.getElementById("noakhali-input").value);
+      
+//       if(isNaN(inputValue) || inputValue <= 0){
+//          document.getElementById('quota-input-error').classList.remove('hidden');
+//          return;
+//       }
+      
+//    })
+
+
+
+
+
 
 
 
