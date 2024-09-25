@@ -29,7 +29,7 @@
             <div 
             id="go-to-blog"
             class="navbar-start">
-                <button class="px-8 py-0 btn btn-primary"><a href="./blog/blog.html">Blog</a></button>
+                    <a class="px-8 py-0 btn btn-primary" href="./blog/blog.html">Blog</a>
             </div>
     
             <div class="navbar-center hidden lg:flex space-x-2">
@@ -68,7 +68,7 @@
   
 
 
-<!--* pop up massage payment Successful -->
+<!--* pop up massage payment Successful  (payment success massage) -->
 
     <dialog id="my_modal_1" class="modal">
         <div class="modal-box flex flex-col text-center py-10 ">
@@ -88,7 +88,7 @@
     </dialog>
 
 
-<!-- * Payment invalid-massage -->
+<!-- * Payment invalid-massage (put valid number  not negative) -->
     <dialog id="my_modal_2" class="modal">
             <div class="modal-box bg-white flex flex-col text-center py-10 ">
                 <h3 class="text-2xl font-bold my-2">warning</h3>
@@ -141,6 +141,7 @@
              class="py-5">
                  The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
              </p>
+
          <!-- DONATE INPUT -->
              <input
              id="noakhali-input"
@@ -150,6 +151,7 @@
              <p id="noakhali-logic-error" class="text-red-500 mb-5 hidden">
                 ⚠️ Total expenses cannot exceed your income!
               </p>
+              
       
          <!-- DONATE BUTTON -->
              <button 

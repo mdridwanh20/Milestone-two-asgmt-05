@@ -14,6 +14,8 @@ document.getElementById('noakhali-donate-button')
             return;
         }
 
+        
+
 
    //  check the input valid
 if (!isNaN(noakhaliInput) && noakhaliInput > 0){
@@ -31,12 +33,12 @@ if (!isNaN(noakhaliInput) && noakhaliInput > 0){
             const updateBalance = mainBalance - noakhaliInput;
             document.getElementById('main-balance').innerText = updateBalance.toFixed(2);
 
-            // pop up massage here.
+            // pop up massage: function.
             document.getElementById("my_modal_1").showModal();
 
 
    } else{
-    //   alert('put valid info')
+    // pop up massage here: function
     document.getElementById("my_modal_2").showModal();
    };
 
