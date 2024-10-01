@@ -47,42 +47,65 @@ donationBtn.addEventListener('click', function(){
 
 
 
-// // live validation check:
-//    document.getElementById('noakhali-input').addEventListener('input', function(){
-      
-//       const inputValue = parseFloat(document.getElementById("noakhali-input").value);
-      
-//       if(isNaN(inputValue) || inputValue <= 0){
-//          document.getElementById('noakhali-input-error').classList.remove('hidden');
-//          return;
-//       }
-      
-//    })
+// // live validation check noakahali:
+   document.getElementById('noakhali-input').addEventListener('input', function(){
+   const inputValue = document.getElementById("noakhali-input").value;
 
-// // live validation check:
-//    document.getElementById('feni-input').addEventListener('input', function(){
+
+      console.log(inputValue);
       
-//       const inputValue = parseFloat(document.getElementById("noakhali-input").value);
+      if(inputValue == ""){
+         document.getElementById('noakhali-input-error').classList.add('hidden');
+         return;
+      }
+
+      const inputValueNumber = parseFloat(inputValue);
+
+      if(isNaN(inputValueNumber) || inputValueNumber < 0){
+         document.getElementById('noakhali-input-error').classList.remove('hidden');
+         return;
+      } else{
+         document.getElementById('noakhali-input-error').classList.add('hidden');
+         return ;
+      }
       
-//       if(isNaN(inputValue) || inputValue <= 0){
-//          document.getElementById('feni-input-error').classList.remove('hidden');
-//          return;
-//       }
-      
-//    })
+   })
+
+
+
+
+// live validation check feni:
+   document.getElementById('feni-input').addEventListener('input', function(){
+   const inputValue = document.getElementById("feni-input").value;
 
    
-// // live validation check:
-//    document.getElementById('quota-input').addEventListener('input', function(){
+      if(isNaN(inputValue) || inputValue < 0){
+         document.getElementById('feni-input-error').classList.remove('hidden');
+         return;
+
+
+      }else{
+         document.getElementById('feni-input-error').classList.add('hidden');
+         return;
+      }
       
-//       const inputValue = parseFloat(document.getElementById("noakhali-input").value);
+   })
+
+   
+// // live validation check qouta:
+   document.getElementById('quota-input').addEventListener('input', function(){
+   const inputValue = parseFloat(document.getElementById("quota-input").value);
       
-//       if(isNaN(inputValue) || inputValue <= 0){
-//          document.getElementById('quota-input-error').classList.remove('hidden');
-//          return;
-//       }
+      if(isNaN(inputValue) || inputValue < 0){
+         document.getElementById('quota-input-error').classList.remove('hidden');
+         return;
+
+      }else{
+         document.getElementById('quota-input-error').classList.add('hidden');
+         return;
+      }
       
-//    })
+   })
 
 
 
